@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const h=document.querySelector(".header"),hamb=h?.querySelector(".hamb"),nav=h?.querySelector(".nav");if(hamb&&nav)hamb.addEventListener("click",()=>nav.classList.toggle("open"));h?.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>{location.href=b.dataset.page}));});
