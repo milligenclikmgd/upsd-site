@@ -36,3 +36,5 @@ body{padding-right:0!important}
 .mega a,.mega-title{text-transform:none!important}
 .mega a{color:#a7adb4!important}.mega a:hover{color:#1e293b!important}
 .projects-menu .mega-title,.library-menu .mega-title{color:#0057B8!important}
+
+.header .mega .mega-column > a,.header .mega .mega-column > a:visited{color:#a7adb4!important;-webkit-text-fill-color:#a7adb4!important}.header .mega .mega-column > a:hover,.header .mega .mega-column > a:focus{color:#111111!important;-webkit-text-fill-color:#111111!important}
