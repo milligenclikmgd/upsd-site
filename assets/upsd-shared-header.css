@@ -158,3 +158,6 @@ body{padding-right:68px!important}
   .header .header-left{justify-content:flex-end!important}
   .header .header-right{justify-content:flex-start!important}
 }
+
+/* Sol menü grubu orta logo ile çakışmayacak şekilde dış kenara alınır. */
+@media (min-width:1251px){.header .header-left{justify-content:flex-start!important;transform:translateX(-24px)!important}}
