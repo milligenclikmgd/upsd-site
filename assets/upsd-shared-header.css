@@ -117,3 +117,18 @@ body{padding-right:68px!important}
   .header .menu-item:hover > .menu-trigger .caret,
   .header .menu-item:focus-within > .menu-trigger .caret{transform:rotate(180deg)!important}
 }
+
+/* Header caret: metne merkezli, yalnızca kendi merkezinde yukarı döner. */
+@media (min-width:851px){
+  .header .menu-trigger{position:relative!important;padding-right:19px!important}
+  .header .menu-trigger .caret{
+    position:absolute!important;left:auto!important;right:0!important;top:50%!important;
+    display:grid!important;place-items:center!important;width:14px!important;height:14px!important;
+    margin:0!important;padding:0!important;line-height:14px!important;
+    transform:translateY(-50%) rotate(0deg)!important;
+    transform-origin:50% 50%!important;
+    transition:transform .58s cubic-bezier(.16,1,.3,1)!important;
+  }
+  .header .menu-item:hover > .menu-trigger .caret,
+  .header .menu-item:focus-within > .menu-trigger .caret{transform:translateY(-50%) rotate(180deg)!important}
+}
