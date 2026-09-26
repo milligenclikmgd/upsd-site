@@ -176,3 +176,9 @@ body{padding-right:68px!important}
 
 /* Son hizalama: sol menü grubunu logo alanından net biçimde ayır. */
 @media (min-width:851px){.header .header-left{transform:translateX(-64px)!important}}
+
+/* Simetrik dış hizalama: iki menü grubunun logo mesafesi eşit. */
+@media (min-width:851px){
+  .header .header-left{transform:translateX(-32px)!important}
+  .header .header-right{transform:translateX(32px)!important}
+}
