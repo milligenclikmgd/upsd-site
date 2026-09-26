@@ -47,3 +47,15 @@ body{padding-right:0!important}
 .header .caret{position:relative!important;top:-1px!important;align-self:center!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;transform-origin:center center!important;will-change:transform!important}
 .header .menu-item:hover .caret,.header .menu-item:focus-within .caret{transform:rotate(180deg)!important}
 .header .header-right .volunteer{display:inline-flex!important;align-items:center!important;justify-content:center!important;white-space:nowrap!important;word-break:keep-all!important;min-width:112px!important;height:42px!important;padding:0 16px!important;flex:0 0 auto!important}
+
+/* Ana sayfadaki sağ mavi şerit bütün sayfalarda ortak olarak kullanılır. */
+body{padding-right:68px!important}
+.side-rail{position:fixed!important;z-index:60!important;right:0!important;top:0!important;bottom:0!important;width:68px!important;background:#0057B8!important;color:#fff!important;display:flex!important;flex-direction:column!important;align-items:center!important}
+.rail-top{width:100%!important;height:112px!important;display:grid!important;place-items:center!important;border-bottom:1px solid #ffffff2b!important}
+.rail-mark{font:700 22px/1 Inter,Arial,sans-serif!important;border:1px solid #ffffff88!important;border-radius:50%!important;width:31px!important;height:31px!important;display:grid!important;place-items:center!important}
+.rail-actions{display:grid!important;gap:18px!important;padding-top:28px!important}
+.rail-action{border:1px solid #ffffff55!important;background:transparent!important;color:#fff!important;border-radius:50%!important;width:39px!important;height:39px!important;display:grid!important;place-items:center!important;font-size:11px!important;font-weight:700!important;cursor:pointer!important;transition:.2s!important}
+.rail-action:hover{background:#fff!important;color:#0057B8!important}
+.rail-bottom{margin-top:auto!important;width:100%!important;padding:20px 0!important;display:grid!important;place-items:center!important;border-top:1px solid #ffffff2b!important}
+.rail-bottom a{font-size:20px!important;color:#fff!important}
+@media(max-width:850px){body{padding-right:0!important}.side-rail{display:none!important}.side-rail + .header .mega{right:0!important}}
