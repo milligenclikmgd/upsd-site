@@ -40,3 +40,10 @@ body{padding-right:0!important}
 .header .mega .mega-column > a,.header .mega .mega-column > a:visited{color:#a7adb4!important;-webkit-text-fill-color:#a7adb4!important}.header .mega .mega-column > a:hover,.header .mega .mega-column > a:focus{color:#111111!important;-webkit-text-fill-color:#111111!important}
 .header-right{justify-content:flex-start!important}
 .header-right .volunteer{margin-left:34px!important}
+
+/* Ana sayfa ile birebir ortak header: alt sayfalarda sağ şerit yoktur */
+.rail{display:none!important}
+.header .menu-trigger{align-items:center!important}
+.header .caret{position:relative!important;top:-1px!important;align-self:center!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;transform-origin:center center!important;will-change:transform!important}
+.header .menu-item:hover .caret,.header .menu-item:focus-within .caret{transform:rotate(180deg)!important}
+.header .header-right .volunteer{display:inline-flex!important;align-items:center!important;justify-content:center!important;white-space:nowrap!important;word-break:keep-all!important;min-width:112px!important;height:42px!important;padding:0 16px!important;flex:0 0 auto!important}
