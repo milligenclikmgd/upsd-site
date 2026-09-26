@@ -152,3 +152,9 @@ body{padding-right:68px!important}
   body .header .menu-item:hover > .menu-trigger .caret,
   body .header .menu-item:focus-within > .menu-trigger .caret{transform:rotate(180deg)!important}
 }
+
+/* Orta logo çevresinde iki menü grubunun iç kenarları eşit mesafede. */
+@media (min-width:1251px){
+  .header .header-left{justify-content:flex-end!important}
+  .header .header-right{justify-content:flex-start!important}
+}
