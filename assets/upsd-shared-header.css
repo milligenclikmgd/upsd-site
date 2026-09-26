@@ -30,3 +30,9 @@ body{padding-right:0!important}
 .menu-item:hover .mega a,.menu-item:focus-within .mega a,.menu-item:hover .mega-title,.menu-item:focus-within .mega-title{opacity:1!important;transform:translateY(0)!important}
 .mega a:hover{color:#111!important;transform:translateY(0)!important}
 @media(max-width:850px){.mega{position:absolute!important;left:0!important;right:0!important}}
+
+/* Header menu metin/rengi ve logo kuralı */
+.header-logo img{filter:brightness(0) saturate(100%) invert(14%) sepia(18%) saturate(1680%) hue-rotate(175deg) brightness(92%) contrast(90%)!important}
+.mega a,.mega-title{text-transform:none!important}
+.mega a{color:#a7adb4!important}.mega a:hover{color:#1e293b!important}
+.projects-menu .mega-title,.library-menu .mega-title{color:#0057B8!important}
