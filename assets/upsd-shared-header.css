@@ -94,22 +94,3 @@ body{padding-right:68px!important}
   .header .header-right .volunteer{height:42px!important;min-width:112px!important;margin-left:34px!important;padding:0 16px!important;white-space:nowrap!important;line-height:42px!important;font:700 12px/42px Poppins,Arial,sans-serif!important}
 }
 
-/* Menü gruplarını orta logoya göre dengeler; oklar yer değiştirmeden merkezden döner. */
-@media (min-width:1251px){
-  .header .header-left{transform:translateX(-80px)!important}
-  .header .caret{
-    position:relative!important;
-    top:0!important;
-    align-self:center!important;
-    display:inline-flex!important;
-    align-items:center!important;
-    justify-content:center!important;
-    width:13px!important;
-    height:16px!important;
-    line-height:16px!important;
-    transform-origin:50% 50%!important;
-    will-change:transform!important;
-  }
-  .header .menu-item:hover .caret,
-  .header .menu-item:focus-within .caret{transform:rotate(180deg)!important}
-}
