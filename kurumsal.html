@@ -117,4 +117,20 @@ boardCards.forEach((card,i)=>card.querySelector('button').addEventListener('clic
 #yonetim .board-card button:hover img,#yonetim .board-card button:focus img{transform:none!important}
 .bio-panel .bio-close{left:22px!important;right:auto!important;top:20px!important;width:26px!important;height:26px!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;color:#1e293b!important;font:300 28px/24px Arial,sans-serif!important;box-shadow:none!important}
 .bio-panel .bio-close:hover{background:transparent!important;color:#0057b8!important}
+</style><style>
+/* CV paneli kapatma işareti her zaman görünür. */
+.bio-panel .bio-close{
+  display:grid!important;
+  place-items:center!important;
+  position:absolute!important;
+  left:22px!important;
+  right:auto!important;
+  top:20px!important;
+  z-index:20!important;
+  visibility:visible!important;
+  opacity:1!important;
+  color:#1e293b!important;
+  background:transparent!important;
+  border:0!important;
+}
 </style></body></html>
