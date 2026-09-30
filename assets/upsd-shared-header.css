@@ -182,3 +182,15 @@ body{padding-right:68px!important}
   .header .header-left{transform:translateX(-32px)!important}
   .header .header-right{transform:translateX(32px)!important}
 }
+
+
+/* Mega menü her sayfada tarayıcı genişliğini eksiksiz kaplar. */
+@media (min-width:851px){
+  .header .mega,
+  .side-rail + .header .mega{
+    left:0!important;
+    right:0!important;
+    width:100vw!important;
+    max-width:none!important;
+  }
+}
