@@ -105,4 +105,16 @@ function boardPosition(i){boardIndex=Math.max(0,Math.min(i,boardCards.length-1))
 function openBio(key){const m=boardMembers[key];bioContent.innerHTML='<img src="'+m.image+'" alt="'+m.name+'"><small>'+m.role+'</small><h3>'+m.name+'</h3><p>'+m.bio+'</p>';bioPanel.classList.add('show');bioBackdrop.classList.add('show');bioPanel.setAttribute('aria-hidden','false')}
 function closeBio(){bioPanel.classList.remove('show');bioBackdrop.classList.remove('show');bioPanel.setAttribute('aria-hidden','true')}
 boardCards.forEach((card,i)=>card.querySelector('button').addEventListener('click',()=>{boardPosition(i);openBio(card.dataset.member)}));document.querySelector('#board-prev').onclick=()=>boardPosition(boardIndex-1);document.querySelector('#board-next').onclick=()=>boardPosition(boardIndex+1);document.querySelector('.bio-close').onclick=closeBio;bioBackdrop.onclick=closeBio;addEventListener('resize',()=>boardPosition(boardIndex));boardPosition(0);
-</script><script src="assets/upsd-shared-header.js"></script></body></html>
+</script><script src="assets/upsd-shared-header.js"></script><style>
+/* Yönetim kurulu kartlarının sade ve hizalı görünümü. */
+#yonetim .board-viewport{border-top:0!important;padding-top:0!important}
+#yonetim .board h2::after,#yonetim .board h2::before{content:none!important;display:none!important}
+#yonetim .board-card .board-name{height:44px!important;margin-bottom:5px!important;display:flex!important;align-items:flex-end!important;justify-content:center!important}
+#yonetim .board-card .board-role{height:38px!important;min-height:38px!important;overflow:hidden!important;display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:2!important}
+#yonetim .portrait{height:330px!important;margin-top:15px!important;display:flex!important;align-items:flex-end!important;justify-content:center!important}
+#yonetim .portrait img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center bottom!important;transform:none!important}
+#yonetim .portrait::after,#yonetim .board-card button:hover .portrait::after,#yonetim .board-card button:focus .portrait::after{display:none!important;content:none!important;opacity:0!important}
+#yonetim .board-card button:hover img,#yonetim .board-card button:focus img{transform:none!important}
+.bio-panel .bio-close{left:22px!important;right:auto!important;top:20px!important;width:26px!important;height:26px!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;color:#1e293b!important;font:300 28px/24px Arial,sans-serif!important;box-shadow:none!important}
+.bio-panel .bio-close:hover{background:transparent!important;color:#0057b8!important}
+</style></body></html>
