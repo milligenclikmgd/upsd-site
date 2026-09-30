@@ -127,31 +127,31 @@ main>section:not(.hero){opacity:0;transform:translateY(30px);transition:opacity 
 /* Ana sayfa mega menü: ortak stilleri kesin olarak ezer. */
 body .header .mega .mega-column > a,
 body .header .mega .mega-column > a:visited{
-  color:#a7adb4!important;
-  -webkit-text-fill-color:#a7adb4!important;
+  color:#1e293b!important;
+  -webkit-text-fill-color:#1e293b!important;
 }
 body .header .mega .mega-column > a:hover,
 body .header .mega .mega-column > a:focus{
-  color:#1e293b!important;
-  -webkit-text-fill-color:#1e293b!important;
+  color:#a7adb4!important;
+  -webkit-text-fill-color:#a7adb4!important;
 }
 </style>
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   document.querySelectorAll('.header .mega .mega-column > a').forEach(function(link){
-    link.style.setProperty('color','#a7adb4','important');
-    link.style.setProperty('-webkit-text-fill-color','#a7adb4','important');
+    link.style.setProperty('color','#1e293b','important');
+    link.style.setProperty('-webkit-text-fill-color','#1e293b','important');
     link.addEventListener('pointerenter',function(){
-      this.style.setProperty('color','#1e293b','important');
-      this.style.setProperty('-webkit-text-fill-color','#1e293b','important');
+      this.style.setProperty('color','#a7adb4','important');
+      this.style.setProperty('-webkit-text-fill-color','#a7adb4','important');
     });
     link.addEventListener('pointerleave',function(){
       this.style.setProperty('color','#a7adb4','important');
       this.style.setProperty('-webkit-text-fill-color','#a7adb4','important');
     });
     link.addEventListener('focus',function(){
-      this.style.setProperty('color','#1e293b','important');
-      this.style.setProperty('-webkit-text-fill-color','#1e293b','important');
+      this.style.setProperty('color','#a7adb4','important');
+      this.style.setProperty('-webkit-text-fill-color','#a7adb4','important');
     });
     link.addEventListener('blur',function(){
       this.style.setProperty('color','#a7adb4','important');
