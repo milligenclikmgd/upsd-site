@@ -8,6 +8,28 @@ document.addEventListener("DOMContentLoaded",()=>{
     for(let row=0;row<Math.max(0,...linkLists.map(list=>list.length));row++)linkLists.forEach(list=>{if(list[row])sequence.push(list[row])});
     sequence.forEach((el,index)=>el.style.setProperty("--reveal-index",String(index)));
   });
+
+  const rail=document.querySelector(".side-rail");
+  if(rail){
+    const languageToggle=rail.querySelector(".rail-language-toggle"), languageMenu=rail.querySelector(".rail-language-menu");
+    const searchToggle=rail.querySelector(".rail-search-toggle"), searchPanel=rail.querySelector(".rail-search-panel"), searchInput=rail.querySelector("#upsd-site-search");
+    const labels={en:{search:"Search UPSD",change:"Change language"},tr:{search:"UPSD'de ara",change:"Dil değiştir"},ar:{search:"ابحث في UPSD",change:"تغيير اللغة"}};
+    let language=localStorage.getItem("upsd-language")||"en";
+    const applyLanguage=(value)=>{
+      language=value; localStorage.setItem("upsd-language",value);
+      document.documentElement.lang=value; document.documentElement.dir=value==="ar"?"rtl":"ltr";
+      languageToggle.textContent=value.toUpperCase();
+      languageToggle.setAttribute("aria-label",labels[value].change);
+      searchToggle.setAttribute("aria-label",labels[value].search);
+      searchInput.placeholder=labels[value].search;
+      rail.querySelectorAll("[data-language]").forEach(button=>button.classList.toggle("active",button.dataset.language===value));
+    };
+    applyLanguage(language);
+    languageToggle.addEventListener("click",()=>{const open=languageMenu.classList.toggle("open");languageToggle.setAttribute("aria-expanded",String(open));});
+    rail.querySelectorAll("[data-language]").forEach(button=>button.addEventListener("click",()=>{applyLanguage(button.dataset.language);languageMenu.classList.remove("open");languageToggle.setAttribute("aria-expanded","false");}));
+    searchToggle.addEventListener("click",()=>{const open=searchPanel.classList.toggle("open");searchPanel.setAttribute("aria-hidden",String(!open));if(open)searchInput.focus();});
+    rail.querySelector(".rail-search-form").addEventListener("submit",event=>{event.preventDefault();const query=searchInput.value.trim().toLocaleLowerCase();if(!query)return;const match=[...document.querySelectorAll("main h1,main h2,main h3,main p,main a")].find(el=>el.textContent.toLocaleLowerCase().includes(query));if(match){match.scrollIntoView({behavior:"smooth",block:"center"});match.classList.add("upsd-search-hit");setTimeout(()=>match.classList.remove("upsd-search-hit"),1800);}});
+  }
   const hero=document.querySelector("main#ana > .hero");
   if(!hero)return;
   const videoStyles=document.createElement("style");
