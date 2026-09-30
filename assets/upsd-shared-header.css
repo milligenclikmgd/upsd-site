@@ -207,3 +207,24 @@ body{padding-right:68px!important}
   color:#a7adb4!important;
   -webkit-text-fill-color:#a7adb4!important;
 }
+
+
+/* Masaüstü ekranlarında header taşmasını önleyen uyarlanabilir ölçüler. */
+@media (min-width:1101px) and (max-width:1450px){
+  .header .head-inner{width:calc(100% - 52px)!important;grid-template-columns:minmax(0,1fr) 250px minmax(0,1fr)!important;gap:20px!important}
+  .header .header-logo img{width:250px!important;height:64px!important}
+  .header .header-left{gap:17px!important;transform:translateX(-14px)!important}
+  .header .header-right{gap:16px!important;transform:translateX(14px)!important}
+  .header .menu-trigger,.header .header-right>a:not(.volunteer){font-size:11px!important}
+  .header .header-right .volunteer{min-width:102px!important;height:38px!important;line-height:38px!important;padding:0 12px!important;font-size:10px!important;white-space:nowrap!important;word-break:keep-all!important;flex:0 0 auto!important}
+}
+@media (min-width:851px) and (max-width:1100px){
+  .header .head-inner{width:calc(100% - 32px)!important;grid-template-columns:minmax(0,1fr) 205px minmax(0,1fr)!important;gap:12px!important}
+  .header .header-logo img{width:205px!important;height:58px!important}
+  .header .header-left{gap:10px!important;transform:none!important}
+  .header .header-right{gap:10px!important;transform:none!important}
+  .header .menu-trigger,.header .header-right>a:not(.volunteer){font-size:9px!important}
+  .header .menu-trigger{gap:4px!important}
+  .header .caret{width:9px!important;flex-basis:9px!important}
+  .header .header-right .volunteer{min-width:92px!important;height:36px!important;line-height:36px!important;margin-left:8px!important;padding:0 9px!important;font-size:9px!important;white-space:nowrap!important;word-break:keep-all!important;flex:0 0 auto!important}
+}
