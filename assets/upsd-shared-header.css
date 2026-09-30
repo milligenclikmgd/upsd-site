@@ -194,3 +194,16 @@ body{padding-right:68px!important}
     max-width:none!important;
   }
 }
+
+
+/* Alt menü seçenekleri: normal koyu, hover açık gri. */
+.header .mega .mega-column > a,
+.header .mega .mega-column > a:visited{
+  color:#1e293b!important;
+  -webkit-text-fill-color:#1e293b!important;
+}
+.header .mega .mega-column > a:hover,
+.header .mega .mega-column > a:focus{
+  color:#a7adb4!important;
+  -webkit-text-fill-color:#a7adb4!important;
+}
