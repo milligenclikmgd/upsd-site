@@ -73,7 +73,7 @@
 </style><style>
 /* Ortak sağ şerit açıkken CV paneli şeridin solunda kalır. */
 @media(min-width:851px){.bio-backdrop{right:68px!important}.bio-panel{right:68px!important;width:min(480px,calc(100vw - 68px))!important}.bio-close{right:92px!important}}
-</style><link rel="stylesheet" href="assets/upsd-shared-header.css?v=13"></head>
+</style><link rel="stylesheet" href="assets/upsd-shared-header.css?v=14"></head>
 <body><aside class="side-rail" aria-label="Quick access">
   <div class="rail-top" aria-hidden="true"></div>
   <div class="rail-actions">
@@ -123,7 +123,7 @@ function boardPosition(i){boardIndex=Math.max(0,Math.min(i,boardCards.length-1))
 function openBio(key){const m=boardMembers[key];bioContent.innerHTML='<img src="'+m.image+'" alt="'+m.name+'"><small>'+m.role+'</small><h3>'+m.name+'</h3><p>'+m.bio+'</p>';bioPanel.classList.add('show');bioBackdrop.classList.add('show');bioPanel.setAttribute('aria-hidden','false')}
 function closeBio(){bioPanel.classList.remove('show');bioBackdrop.classList.remove('show');bioPanel.setAttribute('aria-hidden','true')}
 boardCards.forEach((card,i)=>card.querySelector('button').addEventListener('click',()=>{boardPosition(i);openBio(card.dataset.member)}));document.querySelector('#board-prev').onclick=()=>boardPosition(boardIndex-1);document.querySelector('#board-next').onclick=()=>boardPosition(boardIndex+1);document.querySelector('.bio-close').onclick=closeBio;bioBackdrop.onclick=closeBio;addEventListener('resize',()=>boardPosition(boardIndex));boardPosition(0);
-</script><script src="assets/upsd-shared-header.js?v=13"></script><style>
+</script><script src="assets/upsd-shared-header.js?v=14"></script><style>
 /* Yönetim kurulu kartlarının sade ve hizalı görünümü. */
 #yonetim .board-viewport{border-top:0!important;padding-top:0!important}
 #yonetim .board h2::after,#yonetim .board h2::before{content:none!important;display:none!important}
