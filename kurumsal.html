@@ -73,7 +73,34 @@
 </style><style>
 /* Ortak sağ şerit açıkken CV paneli şeridin solunda kalır. */
 @media(min-width:851px){.bio-backdrop{right:68px!important}.bio-panel{right:68px!important;width:min(480px,calc(100vw - 68px))!important}.bio-close{right:92px!important}}
-</style><link rel="stylesheet" href="assets/upsd-shared-header.css?v=14"></head>
+</style><link rel="stylesheet" href="assets/upsd-shared-header.css?v=14"><style id="rail-icon-fix">
+/* Sağ mavi şerit: tek kaynaktan temiz görünüm */
+.side-rail{z-index:100!important;width:68px!important;background:#0057b8!important}
+.side-rail .rail-top{height:112px!important;flex:0 0 112px!important}
+.side-rail .rail-actions{display:flex!important;flex-direction:column!important;align-items:center!important;gap:12px!important;padding:0!important}
+.side-rail .rail-action{display:grid!important;place-items:center!important;width:42px!important;height:42px!important;margin:0!important;padding:4px!important;border:1px solid rgba(255,255,255,.62)!important;border-radius:50%!important;background:transparent!important;color:#fff!important;box-shadow:none!important;line-height:1!important}
+.side-rail .rail-action:hover,.side-rail .rail-action:focus-visible{background:#fff!important;color:#0057b8!important;outline:none!important}
+.side-rail .rail-language{position:relative!important}
+.side-rail .rail-language-toggle{display:flex!important;flex-direction:column!important;gap:2px!important}
+.side-rail .rail-language-toggle .rail-language-icon{display:block!important;width:18px!important;height:18px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.7!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+.side-rail .rail-language-toggle .rail-language-code{font:700 8px/1 Poppins,Arial,sans-serif!important;letter-spacing:.08em!important}
+.side-rail .rail-search-toggle svg,.side-rail .rail-bottom svg{display:block!important;width:19px!important;height:19px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.8!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+.side-rail .rail-language-menu{display:none!important;position:absolute!important;right:54px!important;top:0!important;width:max-content!important;height:auto!important;margin:0!important;padding:7px!important;grid-template-columns:repeat(3,31px)!important;gap:6px!important;background:#fff!important;border-radius:20px!important;box-shadow:0 10px 26px rgba(0,28,69,.25)!important}
+.side-rail .rail-language-menu.open{display:grid!important}
+.side-rail .rail-language-menu button{display:grid!important;place-items:center!important;width:31px!important;height:31px!important;margin:0!important;padding:0!important;border:0!important;border-radius:50%!important;background:#f1f5f9!important;color:#0057b8!important;font:700 10px/1 Poppins,Arial,sans-serif!important;cursor:pointer!important}
+.side-rail .rail-language-menu button.active,.side-rail .rail-language-menu button:hover{background:#0057b8!important;color:#fff!important}
+.side-rail .rail-bottom{display:flex!important;align-items:center!important;justify-content:center!important;margin-top:auto!important;padding:18px 0!important;border-top:1px solid rgba(255,255,255,.18)!important}
+.side-rail .rail-bottom a{display:grid!important;place-items:center!important;width:42px!important;height:42px!important;border:1px solid rgba(255,255,255,.62)!important;border-radius:50%!important;background:transparent!important;color:#fff!important}
+.side-rail .rail-bottom a:hover{background:#fff!important;color:#0057b8!important}
+.side-rail .rail-search-panel{display:none!important;position:fixed!important;z-index:110!important;right:84px!important;top:112px!important;width:310px!important;height:auto!important;margin:0!important;padding:17px 19px!important;background:#fff!important;color:#0b223d!important;box-shadow:0 12px 28px rgba(0,28,69,.22)!important}
+.side-rail .rail-search-panel.open{display:flex!important}
+.side-rail .rail-search-form{width:100%!important}
+.side-rail .rail-search-form label{display:block!important;margin-bottom:8px!important;color:#0057b8!important;font:600 10px/1 Poppins,Arial,sans-serif!important;letter-spacing:.08em!important;text-transform:uppercase!important}
+.side-rail .rail-search-form>div{display:flex!important;border-bottom:1px solid #b9c4d0!important}
+.side-rail .rail-search-form input{min-width:0!important;flex:1!important;border:0!important;outline:0!important;padding:7px 0!important;color:#102338!important;font:400 13px/1.3 Poppins,Arial,sans-serif!important}
+.side-rail .rail-search-form button{display:grid!important;place-items:center!important;width:34px!important;border:0!important;background:transparent!important;color:#0057b8!important;cursor:pointer!important}
+@media(max-width:850px){.side-rail{display:none!important}}
+</style></head>
 <body><aside class="side-rail" aria-label="Quick access">
   <div class="rail-top" aria-hidden="true"></div>
   <div class="rail-actions">
