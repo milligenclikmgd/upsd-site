@@ -155,7 +155,7 @@ function boardPosition(i){boardIndex=Math.max(0,Math.min(i,boardCards.length-1))
 function openBio(key){const m=boardMembers[key];bioContent.innerHTML='<img src="'+m.image+'" alt="'+m.name+'"><small>'+m.role+'</small><h3>'+m.name+'</h3><p>'+m.bio+'</p>';bioPanel.classList.add('show');bioBackdrop.classList.add('show');bioPanel.setAttribute('aria-hidden','false')}
 function closeBio(){bioPanel.classList.remove('show');bioBackdrop.classList.remove('show');bioPanel.setAttribute('aria-hidden','true')}
 boardCards.forEach((card,i)=>card.querySelector('button').addEventListener('click',()=>{boardPosition(i);openBio(card.dataset.member)}));document.querySelector('#board-prev').onclick=()=>boardPosition(boardIndex-1);document.querySelector('#board-next').onclick=()=>boardPosition(boardIndex+1);document.querySelector('.bio-close').onclick=closeBio;bioBackdrop.onclick=closeBio;addEventListener('resize',()=>boardPosition(boardIndex));boardPosition(0);
-</script><script src="assets/upsd-shared-header.js?v=17"></script><style>
+</script><script src="assets/upsd-shared-header.js?v=18"></script><style>
 /* Yönetim kurulu kartlarının sade ve hizalı görünümü. */
 #yonetim .board-viewport{border-top:0!important;padding-top:0!important}
 #yonetim .board h2::after,#yonetim .board h2::before{content:none!important;display:none!important}
