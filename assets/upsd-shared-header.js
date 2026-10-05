@@ -78,13 +78,18 @@ document.addEventListener("DOMContentLoaded",()=>{
   document.head.appendChild(videoStyles);
   hero.classList.add("hero-video");
   hero.insertAdjacentHTML("afterbegin",'<video class="hero-video-media" autoplay muted loop playsinline preload="metadata" aria-label="UPSD tanıtım videosu"><source src="assets/upsd-video2.mp4" type="video/mp4"></video><span class="hero-video-shade" aria-hidden="true"></span>');
-  hero.insertAdjacentHTML("beforeend",'<button class="hero-sound-toggle" type="button" aria-label="Sesi aç" aria-pressed="false"><span aria-hidden="true">🔇</span><em>Sesi aç</em></button>');
+  const heroLocale=document.documentElement.lang||"en";
+      const soundOn=heroLocale==="ar"?"تشغيل الصوت":heroLocale==="tr"?"Sesi aç":"Sound on";
+      hero.insertAdjacentHTML("beforeend",`<button class="hero-sound-toggle" type="button" aria-label="${soundOn}" aria-pressed="false"><span aria-hidden="true">🔇</span><em>${soundOn}</em></button>`);
   const video=hero.querySelector(".hero-video-media"),toggle=hero.querySelector(".hero-sound-toggle");
   video.muted=true;
   toggle.addEventListener("click",()=>{
     video.muted=!video.muted;
     const muted=video.muted;
-    toggle.setAttribute("aria-label",muted?"Sesi aç":"Sesi kapat");
+    const activeLocale=document.documentElement.lang||"en";
+        const labelsByLocale={en:["Sound on","Sound off"],tr:["Sesi aç","Sesi kapat"],ar:["تشغيل الصوت","إيقاف الصوت"]};
+        const activeLabels=labelsByLocale[activeLocale]||labelsByLocale.en;
+        toggle.setAttribute("aria-label",muted?activeLabels[0]:activeLabels[1]);
     toggle.setAttribute("aria-pressed",String(!muted));
     toggle.querySelector("span").textContent=muted?"🔇":"🔊";
     toggle.querySelector("em").textContent=muted?(language==="en"?"Sound on":language==="ar"?"تشغيل الصوت":"Sesi aç"):(language==="en"?"Sound off":language==="ar"?"إيقاف الصوت":"Sesi kapat");
