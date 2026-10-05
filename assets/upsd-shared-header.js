@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     const applyLanguage=(value)=>{
       language=value; localStorage.setItem("upsd-language",value);
       document.documentElement.lang=value; document.documentElement.dir=value==="ar"?"rtl":"ltr";
-      languageToggle.textContent=value.toUpperCase();
+      const code=languageToggle.querySelector(".rail-language-code"); if(code) code.textContent=value.toUpperCase();
       languageToggle.setAttribute("aria-label",labels[value].change);
       searchToggle.setAttribute("aria-label",labels[value].search);
       searchInput.placeholder=labels[value].search;
