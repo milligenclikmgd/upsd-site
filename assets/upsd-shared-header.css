@@ -246,3 +246,14 @@ body{padding-right:68px!important}
 .side-rail .rail-search-panel.open{display:flex!important}
 .side-rail .rail-search-form label{font-size:10px!important}
 @media(max-width:850px){.side-rail .rail-search-panel{right:0!important;top:74px!important;width:100%!important}}
+
+
+/* Sağ şerit: gerçek simgeler ve dil seçimi */
+.side-rail .rail-language-toggle{display:flex!important;flex-direction:column!important;gap:1px!important;padding:5px!important;line-height:1!important}
+.side-rail .rail-language-toggle .rail-language-icon{width:18px!important;height:18px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.65!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+.side-rail .rail-language-toggle .rail-language-code{font:700 8px/1 Poppins,Arial,sans-serif!important;letter-spacing:.07em!important}
+.side-rail .rail-search-toggle svg,.side-rail .rail-bottom svg{width:19px!important;height:19px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.8!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+.side-rail .rail-bottom a{display:grid!important;place-items:center!important;width:42px!important;height:42px!important;border:1px solid #ffffff8f!important;border-radius:50%!important;background:#ffffff0c!important;color:#fff!important;transition:background .18s ease,color .18s ease!important}
+.side-rail .rail-bottom a:hover{background:#fff!important;color:#0057B8!important}
+.side-rail .rail-language-menu{align-items:center!important}
+.side-rail .rail-language-menu button{font-size:10px!important;letter-spacing:.02em!important}
