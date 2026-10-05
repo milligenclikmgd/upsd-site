@@ -16,6 +16,36 @@ document.addEventListener("DOMContentLoaded",()=>{
     "Yetenekleri":"نكتشف","Keşfediyoruz.":"المواهب.","Türkiye’de":"في تركيا","gelişim noktası":"مراكز تطوير","Eğitim, sanat, spor":"التعليم والفنون والرياضة","ve sosyal etki programları":"وبرامج الأثر الاجتماعي","Gençlere ve topluma":"للشباب والمجتمع","değer katan gönüllü ağımız":"شبكة تطوعية تضيف قيمة","Geleceğe daha güçlü":"أجيال أقوى","nesiller hazırlamak":"للمستقبل","İstanbul Şubesi · Kadıköy / İstanbul":"فرع إسطنبول · كاديكوي / إسطنبول","Şube Sorumlusu: Selin Demir · +90 (216) 000 00 00":"مسؤولة الفرع: سيلين دمير · +90 (216) 000 00 00","22 EYLÜL 2026":"22 سبتمبر 2026","18 EYLÜL 2026":"18 سبتمبر 2026","12 EYLÜL 2026":"12 سبتمبر 2026","PROGRAM":"برنامج","ETKİNLİK":"فعالية","SOSYAL ETKİ":"أثر اجتماعي","UPSD; sporcuları, sanatçıları, eğitmenleri ve gençleri nitelikli eğitim, ortak üretim ve uluslararası gelişim platformunda bir araya getirir.":"تجمع UPSD الرياضيين والفنانين والمدربين والشباب في منصة للتعليم النوعي والعمل المشترك والتطوير الدولي.","UPSD tanıtım videosu":"فيديو تعريفي بـ UPSD","UPSD sayılarla":"UPSD بالأرقام","Türkiye şehir ağı haritası":"خريطة شبكة مدن تركيا","Birlikte üreten genç katılımcılar":"شباب يبتكرون معًا","Hareket ve sporla gelişen gençler":"شباب ينمون بالحركة والرياضة","Atölyede birlikte öğrenen gençler":"شباب يتعلمون معًا في ورشة","Eğitim atölyesi":"ورشة تعليمية","Sahne performansı":"أداء مسرحي","Ritim terapisi":"علاج بالإيقاع","Araştırma":"بحث","Uluslararası etkinlik":"فعالية دولية","Performans Akademisi eğitimi":"تدريب أكاديمية الأداء","© 2026 UPSD – Uluslararası Performans Sanatları ve Spor Derneği. Tüm hakları saklıdır.":"© 2026 UPSD – الجمعية الدولية لفنون الأداء والرياضة. جميع الحقوق محفوظة.","KVKK · Çerez Politikası · Gizlilik Politikası · Aydınlatma Metni · Açık Rıza Metni":"حماية البيانات · سياسة ملفات الارتباط · سياسة الخصوصية · إشعار الخصوصية · نص الموافقة الصريحة",
     "Uluslararası Performans Sanatları ve Spor Derneği":"الجمعية الدولية لفنون الأداء والرياضة"
   });
+
+  /* complete locale coverage */
+  Object.assign(translations.en,{
+    "Sesi aç":"Sound on","Sesi kapat":"Sound off","UPSD tanıtım videosu":"UPSD introduction video",
+    "18 EYLÜL 2026":"18 SEPTEMBER 2026","12 EYLÜL 2026":"12 SEPTEMBER 2026",
+    "PROGRAM":"PROGRAMME","ETKİNLİK":"EVENT","SOSYAL ETKİ":"SOCIAL IMPACT",
+    "Yerelden evrensele uzanan iş birlikleriyle gençlerin yeteneğini kalıcı başarı hikâyelerine dönüştürüyoruz.":"Through collaborations from local to global, we turn young people's talent into lasting success stories.",
+    "Bilimsel, disiplinli ve yaratıcı programlarla her katılımcının kendi potansiyelini güçlendiriyoruz.":"With scientific, disciplined and creative programmes, we empower every participant to develop their potential.",
+    "Farklı kültürleri, disiplinleri ve yetenekleri ortak değerler etrafında buluşturuyoruz.":"We bring together different cultures, disciplines and talents around shared values.",
+    "Bilim, disiplin ve yeteneği aynı noktada buluşturuyoruz.":"We unite science, discipline and talent in one place.",
+    "Spor, sahne sanatları ve kişisel gelişim programlarıyla gençlerin çok yönlü potansiyeline eşlik ediyoruz.":"We support young people's multidimensional potential through sport, performing arts and personal development programmes.",
+    "Genç yetenekler için bilimsel ve sahaya dokunan bütüncül gelişim programı.":"A holistic development programme that is both scientific and rooted in practice for young talents.",
+    "Farklı ülkelerden katılımcıları ortak üretim ve sahne deneyiminde buluşturuyoruz.":"We bring participants from different countries together through co-creation and stage experience.",
+    "Her yaş ve kesim için erişilebilir spor kültürünü yaygınlaştırıyoruz.":"We expand an accessible sport culture for every age and community."
+  });
+  Object.assign(translations.ar,{
+    "Sesi aç":"تشغيل الصوت","Sesi kapat":"إيقاف الصوت","UPSD tanıtım videosu":"فيديو تعريفي عن UPSD",
+    "22 EYLÜL 2026":"22 سبتمبر 2026","18 EYLÜL 2026":"18 سبتمبر 2026","12 EYLÜL 2026":"12 سبتمبر 2026",
+    "PROGRAM":"برنامج","ETKİNLİK":"فعالية","SOSYAL ETKİ":"أثر اجتماعي",
+    "Yerelden evrensele uzanan iş birlikleriyle gençlerin yeteneğini kalıcı başarı hikâyelerine dönüştürüyoruz.":"نحوّل مواهب الشباب إلى قصص نجاح مستدامة عبر شراكات تمتد من المحلي إلى العالمي.",
+    "Bilimsel, disiplinli ve yaratıcı programlarla her katılımcının kendi potansiyelini güçlendiriyoruz.":"نعزز إمكانات كل مشارك ببرامج علمية ومنضبطة وإبداعية.",
+    "Farklı kültürleri, disiplinleri ve yetenekleri ortak değerler etrafında buluşturuyoruz.":"نجمع الثقافات والتخصصات والمواهب المختلفة حول قيم مشتركة.",
+    "01 / GELİŞİM":"01 / التطوير","02 / SANAT":"02 / الفنون","03 / SPOR":"03 / الرياضة","04 / SAĞLIK":"04 / الصحة","05 / ARAŞTIRMA":"05 / البحث","06 / AĞ":"06 / الشبكة",
+    "Sağlık, Ritim ve Sanat Terapileri":"العلاج بالصحة والإيقاع والفنون",
+    "Bilim, disiplin ve yeteneği aynı noktada buluşturuyoruz.":"نجمع العلم والانضباط والموهبة في مكان واحد.",
+    "Spor, sahne sanatları ve kişisel gelişim programlarıyla gençlerin çok yönlü potansiyeline eşlik ediyoruz.":"ندعم إمكانات الشباب المتعددة الأبعاد من خلال الرياضة والفنون الأدائية وبرامج التطوير الشخصي.",
+    "Genç yetenekler için bilimsel ve sahaya dokunan bütüncül gelişim programı.":"برنامج تنموي شامل للمواهب الشابة يجمع بين المنهج العلمي والتطبيق العملي.",
+    "Farklı ülkelerden katılımcıları ortak üretim ve sahne deneyiminde buluşturuyoruz.":"نجمع مشاركين من بلدان مختلفة في تجربة للإنتاج المشترك والأداء على المسرح.",
+    "Her yaş ve kesim için erişilebilir spor kültürünü yaygınlaştırıyoruz.":"نعزز ثقافة رياضية متاحة لجميع الأعمار والفئات."
+  });
   const localeState={text:[],attrs:[]};
   const normalized=value=>String(value||"").replace(/\s+/g," ").trim();
   const localize=(locale)=>{
